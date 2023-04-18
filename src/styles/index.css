@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: salmon;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainContainer {
+  height: 80vh;
+  text-align: center;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: salmon;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
