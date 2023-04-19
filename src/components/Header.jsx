@@ -1,9 +1,14 @@
 import React from "react";
+import logo from "../assets/mouffette.webp";
 
 export default function Header() {
   return (
     <header>
-      <h1>Header</h1>
+      <img className="logoMouffette" src={logo} alt="" srcset="" />
+      <div>
+        <h1>Mouffette</h1>
+        <h2>Dessinatrice/Créatrice de contenu</h2>
+      </div>
     </header>
   );
 }

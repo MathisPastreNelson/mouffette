@@ -1,8 +1,15 @@
 header {
+  //   background: url("../assets/Banner.webp");
   background-color: salmon;
+  background-size: cover;
   text-align: center;
-  height: 10vh;
+  height: 15vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.logoMouffette {
+  height: 12vh;
+  border-radius: 50%;
 }

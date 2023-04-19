@@ -1,8 +1,24 @@
-.MainContainer {
-  height: 80vh;
+.mainContainer {
   text-align: center;
   background-color: bisque;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 75vh;
+}
+
+.imageSizeBox {
+  height: 75vh;
+}
+
+.buttonSwitch {
+  width: 100%;
+  height: 75vh;
+  font-size: 50px;
+  border: 0px;
+}
+
+.bdImg {
+  height: 75vh;
+  object-fit: cover;
 }
