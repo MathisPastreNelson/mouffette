@@ -8,12 +8,11 @@
 }
 
 .imageSizeBox {
-  height: 76vh;
+  height: 77vh;
 }
 
 .buttonSwitch {
-  width: 100%;
-  height: 76vh;
+  height: 77vh;
   font-size: 50px;
   border: 0px;
   filter: brightness(90%);
@@ -28,17 +27,18 @@
 .bgSwitchG {
   background: url("../assets/BGcomicL.jpg");
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: 300px;
+  background-repeat: no-repeat;
 }
 
 .bgSwitchR {
   background: url("../assets/BGcomicR.jpg");
   background-position: 50% 50%;
-  background-size: 600px;
+  background-size: 300px;
+  background-repeat: no-repeat;
 }
 
 .buttonSwitch > div {
-  background-color: rgba(79, 5, 140, 0.792);
   padding: 0 2rem;
   border-radius: 15px;
   color: white;
@@ -52,11 +52,28 @@
   transform: scale(1.1);
 }
 .bdImg {
-  height: 75vh;
-  object-fit: cover;
+  height: 77vh;
   -webkit-animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  border: 0.5vh solid rgba(79, 5, 140, 0.792);
   border-radius: 10px;
+}
+
+@media screen and (max-device-width: 1300px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+
+  .imageSizeBox {
+    height: auto;
+  }
+
+  .buttonSwitch {
+    height: 15vh;
+  }
+
+  .bdImg {
+    width: 90%;
+    height: auto;
+  }
 }
