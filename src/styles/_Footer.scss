@@ -1,9 +1,45 @@
 footer {
   //   background: url("../assets/Banner.webp");
-  background-color: salmon;
+
   text-align: center;
-  height: 10vh;
+  height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.iconFooterBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconFooter {
+  font-size: 6vh;
+  transition: ease-out 200ms;
+}
+
+.twitch {
+  height: 6vh;
+
+  transition: ease-out 200ms;
+}
+.twitter {
+  height: 6vh;
+  color: blue;
+  transition: ease-out 200ms;
+}
+
+.instagram {
+  height: 6vh;
+}
+.twitch:hover {
+  transform: scale(1.1);
+}
+.twitter:hover {
+  transform: scale(1.1);
+}
+
+.instagram:hover {
+  transform: scale(1.1);
 }

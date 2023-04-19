@@ -1,24 +1,62 @@
 .mainContainer {
+  overflow: hidden;
   text-align: center;
-  background-color: bisque;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
+  min-height: 76vh;
 }
 
 .imageSizeBox {
-  height: 75vh;
+  height: 76vh;
 }
 
 .buttonSwitch {
   width: 100%;
-  height: 75vh;
+  height: 76vh;
   font-size: 50px;
   border: 0px;
+  filter: brightness(90%);
+  transition: 400ms ease-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
+.bgSwitchG {
+  background: url("../assets/BGcomicL.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bgSwitchR {
+  background: url("../assets/BGcomicR.jpg");
+  background-position: 50% 50%;
+  background-size: 600px;
+}
+
+.buttonSwitch > div {
+  background-color: rgba(79, 5, 140, 0.792);
+  padding: 0 2rem;
+  border-radius: 15px;
+  color: white;
+  transition: 400ms ease-out;
+}
+
+.buttonSwitch:hover {
+  filter: brightness(120%);
+}
+.buttonSwitch:hover > * {
+  transform: scale(1.1);
+}
 .bdImg {
   height: 75vh;
   object-fit: cover;
+  -webkit-animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  border: 0.5vh solid rgba(79, 5, 140, 0.792);
+  border-radius: 10px;
 }

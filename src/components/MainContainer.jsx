@@ -19,8 +19,8 @@ export default function MainContainer() {
 
   return (
     <div className="mainContainer">
-      <button className="buttonSwitch" onClick={handlePrevClick}>
-        Précédent
+      <button className="buttonSwitch bgSwitchG" onClick={handlePrevClick}>
+        <div>Précédent</div>
       </button>
       <div className="imageSizeBox">
         {currentImage === 0 && <img className="bdImg" alt="img1" src={bd1} />}
@@ -30,8 +30,8 @@ export default function MainContainer() {
         {currentImage === 4 && <img className="bdImg" alt="img1" src={bd5} />}
         {currentImage === 5 && <img className="bdImg" alt="img1" src={bd6} />}
       </div>
-      <button className="buttonSwitch" onClick={handleNextClick}>
-        Suivant
+      <button className="buttonSwitch bgSwitchR" onClick={handleNextClick}>
+        <div>Suivant</div>
       </button>
     </div>
   );

@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  background: url("../assets/BGcomic2.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 * {
@@ -12,51 +15,142 @@ h1 {
 }
 
 header {
-  background-color: salmon;
   background-size: cover;
   text-align: center;
-  height: 15vh;
+  height: 14vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.logoMouffette {
-  height: 12vh;
-  border-radius: 50%;
+.titleMouffetteBox {
+  background-color: rgba(79, 5, 140, 0.792);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
 }
 
+.logoMouffette {
+  height: 12vh;
+  border: 3px solid rgba(79, 5, 140, 0.792);
+  border-radius: 50%;
+}
+@keyframes tilt-in-top-1 {
+  0% {
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}
 .mainContainer {
+  overflow: hidden;
   text-align: center;
-  background-color: bisque;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
+  min-height: 76vh;
 }
 
 .imageSizeBox {
-  height: 75vh;
+  height: 76vh;
 }
 
 .buttonSwitch {
   width: 100%;
-  height: 75vh;
+  height: 76vh;
   font-size: 50px;
   border: 0px;
+  filter: brightness(90%);
+  transition: 400ms ease-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bgSwitchG {
+  background: url("../assets/BGcomicL.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bgSwitchR {
+  background: url("../assets/BGcomicR.jpg");
+  background-position: 50% 50%;
+  background-size: 600px;
+}
+
+.buttonSwitch > div {
+  background-color: rgba(79, 5, 140, 0.792);
+  padding: 0 2rem;
+  border-radius: 15px;
+  color: white;
+  transition: 400ms ease-out;
+}
+
+.buttonSwitch:hover {
+  filter: brightness(120%);
+}
+
+.buttonSwitch:hover > * {
+  transform: scale(1.1);
 }
 
 .bdImg {
   height: 75vh;
   -o-object-fit: cover;
      object-fit: cover;
+  animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  border: 0.5vh solid rgba(79, 5, 140, 0.792);
+  border-radius: 10px;
 }
 
 footer {
-  background-color: salmon;
   text-align: center;
-  height: 10vh;
+  height: 9vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.iconFooterBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconFooter {
+  font-size: 6vh;
+  transition: ease-out 200ms;
+}
+
+.twitch {
+  height: 6vh;
+  transition: ease-out 200ms;
+}
+
+.twitter {
+  height: 6vh;
+  color: blue;
+  transition: ease-out 200ms;
+}
+
+.instagram {
+  height: 6vh;
+}
+
+.twitch:hover {
+  transform: scale(1.1);
+}
+
+.twitter:hover {
+  transform: scale(1.1);
+}
+
+.instagram:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=index.css.map */
