@@ -14,14 +14,19 @@ header {
 }
 
 .titleMouffetteBox {
-  background-color: rgba(79, 5, 140, 0.792);
+  background-color: rgba(155, 79, 218, 0.572);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logoMouffette {
   height: 12vh;
-  border: 3px solid rgba(79, 5, 140, 0.792);
+  border: 3px solid rgba(155, 79, 218, 0.75);
   border-radius: 50%;
 }

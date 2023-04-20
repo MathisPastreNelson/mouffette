@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  background: url("../assets/BGcomic2.jpg");
-  background-position: 50% 50%;
+  background: radial-gradient(circle, rgba(179, 17, 165, 0.479) 0, rgba(39, 1, 48, 0.75) 50%, rgba(111, 6, 6, 0.494) 100%);
   background-size: cover;
 }
 
@@ -25,15 +24,20 @@ header {
 }
 
 .titleMouffetteBox {
-  background-color: rgba(79, 5, 140, 0.792);
+  background-color: rgba(155, 79, 218, 0.572);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logoMouffette {
   height: 12vh;
-  border: 3px solid rgba(79, 5, 140, 0.792);
+  border: 3px solid rgba(155, 79, 218, 0.75);
   border-radius: 50%;
 }
 @keyframes tilt-in-top-1 {
@@ -46,80 +50,148 @@ header {
     opacity: 1;
   }
 }
+.presentContainer {
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+  background-color: rgba(32, 32, 32, 0.792);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 78rem;
+}
+
+.presentBox {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  width: 45%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.presentBox2 {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+  width: 95%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+@media screen and (max-device-width: 1262px) {
+  .presentContainer {
+    max-width: 52rem;
+  }
+  .presentBox {
+    width: 43%;
+    min-height: 11rem;
+  }
+  .presentBox2 {
+    width: 92%;
+  }
+}
+@media screen and (max-device-width: 838px) {
+  .presentContainer {
+    max-width: 26rem;
+    flex-direction: column;
+  }
+  .presentBox {
+    width: 85%;
+  }
+  .presentBox2 {
+    width: 85%;
+  }
+}
+@media screen and (max-device-width: 406px) {
+  .presentContainer {
+    border-radius: 0px;
+  }
+  .bdImg {
+    width: 98%;
+  }
+}
 .mainContainer {
   overflow: hidden;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 76vh;
-}
-
-.imageSizeBox {
-  height: 77vh;
-}
-
-.buttonSwitch {
-  height: 77vh;
-  font-size: 50px;
-  border: 0px;
-  filter: brightness(90%);
-  transition: 400ms ease-out;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.bgSwitchG {
-  background: url("../assets/BGcomicL.jpg");
-  background-position: 50% 50%;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-
-.bgSwitchR {
-  background: url("../assets/BGcomicR.jpg");
-  background-position: 50% 50%;
-  background-size: 300px;
-  background-repeat: no-repeat;
-}
-
-.buttonSwitch > div {
-  padding: 0 2rem;
-  border-radius: 15px;
-  color: white;
-  transition: 400ms ease-out;
-}
-
-.buttonSwitch:hover {
-  filter: brightness(120%);
-}
-
-.buttonSwitch:hover > * {
-  transform: scale(1.1);
-}
-
-.bdImg {
-  height: 77vh;
-  animation: tilt-in-top-1 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  flex-wrap: wrap;
+  background-color: rgba(32, 32, 32, 0.792);
+  max-width: 78rem;
+  margin: 0rem auto;
+  padding: 0.5rem 0;
   border-radius: 10px;
 }
 
-@media screen and (max-device-width: 1300px) {
+.bdImg {
+  height: 50vh;
+  transition: 400ms ease-out;
+  margin: 0.4rem;
+  width: 24rem;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.bdImg:hover {
+  transform: scale(1.05);
+  background-color: rgba(155, 79, 218, 0.75);
+}
+
+@media screen and (max-device-width: 1262px) {
   .mainContainer {
-    flex-direction: column;
+    max-width: 52rem;
   }
-  .imageSizeBox {
-    height: auto;
+}
+@media screen and (max-device-width: 838px) {
+  .mainContainer {
+    max-width: 26rem;
   }
-  .buttonSwitch {
-    height: 15vh;
+}
+@media screen and (max-device-width: 406px) {
+  .mainContainer {
+    border-radius: 0px;
   }
   .bdImg {
-    width: 90%;
-    height: auto;
+    width: 98%;
+  }
+}
+.StreamContainer {
+  margin: 0.5rem auto;
+  padding: 0.5rem 0;
+  background-color: rgba(32, 32, 32, 0.792);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 78rem;
+}
+
+@media screen and (max-device-width: 1262px) {
+  .StreamContainer {
+    max-width: 52rem;
+  }
+}
+@media screen and (max-device-width: 838px) {
+  .StreamContainer {
+    max-width: 26rem;
+    flex-direction: column;
+  }
+}
+@media screen and (max-device-width: 406px) {
+  .StreamContainer {
+    border-radius: 0px;
   }
 }
 footer {
@@ -149,7 +221,6 @@ footer {
 
 .twitter {
   height: 6vh;
-  color: blue;
   transition: ease-out 200ms;
 }
 
