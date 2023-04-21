@@ -10,14 +10,28 @@
   margin: 0rem auto;
   padding: 0.8rem 0;
   border-radius: 10px;
+  -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+    both;
+  animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .buttonCollapse {
-  width: 24rem;
+  min-width: 24rem;
+  border: 0px;
+  background-color: rgba(155, 79, 218, 0.572);
+}
+
+.buttonCollapse:hover {
+  filter: brightness(1.25);
 }
 
 .textButtons {
   font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none;
 }
 
 .collapseBox {
@@ -30,11 +44,11 @@
   height: 50vh;
   transition: 400ms ease-out;
   width: 24rem;
-  cursor: pointer;
+
   padding: 0.8rem 0;
-}
-.bdImg:hover {
-  transform: scale(1.05);
+
+  -webkit-animation: slit-in-vertical 0.85s ease-out both;
+  animation: slit-in-vertical 0.85s ease-out both;
 }
 
 @media screen and (max-device-width: 1262px) {

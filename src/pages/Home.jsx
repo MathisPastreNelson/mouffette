@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import MouseFollower from "../components/MouseFollower";
 import PresentContainer from "../components/PresentContainer";
 import MainContainer from "../components/MainContainer";
 import PresentContainer2 from "../components/PresentContainer2";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <MouseFollower />
       <PresentContainer />
       <MainContainer />
       <PresentContainer2 />
