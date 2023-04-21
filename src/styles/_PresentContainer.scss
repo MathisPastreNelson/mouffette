@@ -7,9 +7,10 @@
   align-items: center;
   border-radius: 10px;
   max-width: 78rem;
-  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   overflow: hidden;
   z-index: -1;
 }
@@ -26,6 +27,13 @@
   align-items: center;
   font-size: 1.2rem;
   text-align: justify;
+  transition: 400ms ease-out;
+}
+
+.presentBox:hover {
+  background-color: rgba(1, 1, 1, 0.816);
+  color: white;
+  transform: scale(1.02);
 }
 .presentBox2 {
   background-color: white;
@@ -39,6 +47,13 @@
   align-items: center;
   font-size: 1.2rem;
   text-align: justify;
+  transition: 400ms ease-out;
+}
+
+.presentBox2:hover {
+  background-color: rgba(1, 1, 1, 0.816);
+  color: white;
+  transform: scale(1.02);
 }
 
 .SoutineButton {
