@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
+import { useCollapse } from "react-collapsed";
 
 import bd1 from "../assets/FqFM_HhXgAINKYa.jpg";
 import bd2 from "../assets/FrsWjsjWYAIpAiP.jpg";
@@ -26,6 +29,17 @@ import bd18 from "../assets/FJyeNtMXEAAkEf_.jpg";
 export default function MainContainer() {
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(false);
+
+  const {
+    getCollapseProps: getCollapseProps1,
+    getToggleProps: getToggleProps1,
+    isExpanded: isExpanded1,
+  } = useCollapse();
+  const {
+    getCollapseProps: getCollapseProps2,
+    getToggleProps: getToggleProps2,
+    isExpanded: isExpanded2,
+  } = useCollapse();
 
   const handleImageClick = (index) => {
     setCurrentIndex(index);
@@ -59,6 +73,7 @@ export default function MainContainer() {
         src={bd5}
         alt=""
         onClick={() => handleImageClick(4)}></img>
+
       <img
         className="bdImg"
         src={bd6}
@@ -80,51 +95,58 @@ export default function MainContainer() {
         src={bd9}
         alt=""
         onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd10}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd11}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd12}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd13}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd14}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd15}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd16}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd17}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
-      <img
-        className="bdImg"
-        src={bd18}
-        alt=""
-        onClick={() => handleImageClick(5)}></img>
+      <section className="collapseBox" {...getCollapseProps2()}>
+        <img
+          className="bdImg"
+          src={bd10}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd11}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd12}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd13}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd14}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd15}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd16}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd17}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+        <img
+          className="bdImg"
+          src={bd18}
+          alt=""
+          onClick={() => handleImageClick(5)}></img>
+      </section>
+      <button className="buttonCollapse" {...getToggleProps2()}>
+        <p className="textButtons">
+          {isExpanded2 ? "Fermer" : "En voir plus.."}
+        </p>
+      </button>
 
       <Lightbox
         open={open}

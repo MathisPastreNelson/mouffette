@@ -89,6 +89,23 @@ header {
   text-align: justify;
 }
 
+.SoutineButton {
+  background-color: rgba(131, 255, 69, 0.712);
+  color: black;
+  padding: 1rem 1rem;
+  width: 95%;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 400ms ease-out;
+}
+
+.SoutineButton:hover {
+  background-color: rgba(132, 248, 74, 0.881);
+}
+
 @media screen and (max-device-width: 1262px) {
   .presentContainer {
     max-width: 52rem;
@@ -125,28 +142,40 @@ header {
   overflow: hidden;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   background-color: rgba(32, 32, 32, 0.792);
   max-width: 78rem;
   margin: 0rem auto;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   border-radius: 10px;
+}
+
+.buttonCollapse {
+  width: 24rem;
+}
+
+.textButtons {
+  font-size: 3rem;
+}
+
+.collapseBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .bdImg {
   height: 50vh;
   transition: 400ms ease-out;
-  margin: 0.4rem;
   width: 24rem;
   cursor: pointer;
-  padding: 0.4rem;
+  padding: 0.8rem 0;
 }
 
 .bdImg:hover {
   transform: scale(1.05);
-  background-color: rgba(155, 79, 218, 0.75);
 }
 
 @media screen and (max-device-width: 1262px) {

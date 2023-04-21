@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import PresentContainer from "../components/PresentContainer";
 import MainContainer from "../components/MainContainer";
 import PresentContainer2 from "../components/PresentContainer2";
-import StreamContainer from "../components/StreamContainer";
+import SoutenirContainer from "../components/SoutenirContainer";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
       <PresentContainer />
       <MainContainer />
       <PresentContainer2 />
-      <StreamContainer />
+      <SoutenirContainer />
       <Footer />
     </div>
   );

@@ -2,27 +2,39 @@
   overflow: hidden;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   background-color: rgba(32, 32, 32, 0.792);
   max-width: 78rem;
   margin: 0rem auto;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   border-radius: 10px;
+}
+
+.buttonCollapse {
+  width: 24rem;
+}
+
+.textButtons {
+  font-size: 3rem;
+}
+
+.collapseBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .bdImg {
   height: 50vh;
   transition: 400ms ease-out;
-  margin: 0.4rem;
   width: 24rem;
   cursor: pointer;
-  padding: 0.4rem;
+  padding: 0.8rem 0;
 }
 .bdImg:hover {
   transform: scale(1.05);
-  background-color: rgba(155, 79, 218, 0.75);
 }
 
 @media screen and (max-device-width: 1262px) {
