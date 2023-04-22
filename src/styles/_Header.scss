@@ -11,13 +11,13 @@ header {
     rgb(0, 0, 0) 11.4%,
     rgba(0, 0, 0, 0.628) 70.2%
   );
-  z-index: 20;
 }
 
 .titleMouffetteBox {
+  margin: 0 1%;
   background-color: rgba(155, 79, 218, 0.572);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 20px;
   height: 10vh;
   display: flex;
@@ -27,7 +27,20 @@ header {
 }
 
 .logoMouffette {
+  margin: 0 1%;
   height: 12vh;
   border: 3px solid rgba(155, 79, 218, 0.75);
   border-radius: 50%;
+}
+
+@media screen and (max-device-width: 406px) {
+  .titleMouffetteBox {
+    margin: 0%;
+    font-size: 12px;
+    padding: 0.3rem;
+  }
+
+  .logoMouffette {
+    margin: 0%;
+  }
 }

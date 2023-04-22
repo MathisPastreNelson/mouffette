@@ -61,21 +61,30 @@ export default function MainContainer() {
 
   return (
     <div className="mainContainer">
-      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+      <AnimationOnScroll
+        initiallyVisible="true"
+        animateIn="animate__bounceInLeft"
+        animateOut="animate__bounceOutRight">
         <img
           className="bdImg"
           src={bd1}
           alt=""
           onClick={() => handleImageClick(0)}></img>
       </AnimationOnScroll>
-      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+      <AnimationOnScroll
+        initiallyVisible="true"
+        animateIn="animate__bounceInLeft"
+        animateOut="animate__bounceOutRight">
         <img
           className="bdImg"
           src={bd2}
           alt=""
           onClick={() => handleImageClick(1)}></img>
       </AnimationOnScroll>
-      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+      <AnimationOnScroll
+        initiallyVisible="true"
+        animateIn="animate__bounceInLeft"
+        animateOut="animate__bounceOutRight">
         <img
           className="bdImg"
           src={bd3}
@@ -84,14 +93,18 @@ export default function MainContainer() {
       </AnimationOnScroll>
 
       <section className="collapseBox" {...getCollapseProps2()}>
-        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd4}
             alt=""
             onClick={() => handleImageClick(3)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd5}
@@ -99,91 +112,117 @@ export default function MainContainer() {
             onClick={() => handleImageClick(4)}></img>
         </AnimationOnScroll>
 
-        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd6}
             alt=""
             onClick={() => handleImageClick(5)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg "
             src={bd7}
             alt=""
             onClick={() => handleImageClick(6)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg "
             src={bd8}
             alt=""
             onClick={() => handleImageClick(7)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd9}
             alt=""
             onClick={() => handleImageClick(8)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd10}
             alt=""
             onClick={() => handleImageClick(9)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd11}
             alt=""
             onClick={() => handleImageClick(10)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd12}
             alt=""
             onClick={() => handleImageClick(11)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd13}
             alt=""
             onClick={() => handleImageClick(12)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd14}
             alt=""
             onClick={() => handleImageClick(13)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd15}
             alt=""
             onClick={() => handleImageClick(14)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd16}
             alt=""
             onClick={() => handleImageClick(15)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd17}
             alt=""
             onClick={() => handleImageClick(16)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeIn">
+        <AnimationOnScroll
+          animateIn="animate__bounceInLeft"
+          animateOut="animate__bounceOutRight">
           <img
             className="bdImg"
             src={bd18}
