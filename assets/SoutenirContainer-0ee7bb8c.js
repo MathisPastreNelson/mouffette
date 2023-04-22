@@ -1,1 +1,0 @@
-import{a as t}from"./index-2f794973.js";function a(){return t("div",{className:"StreamContainer",children:t("a",{className:"SoutineButton",target:"_blank",href:"https://streamlabs.com/mouffette_/tip",children:"Pourquoi ne pas la soutenir ?"})})}export{a as default};
