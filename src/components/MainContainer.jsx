@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -51,6 +51,7 @@ export default function MainContainer() {
 
   useEffect(() => {
     if (isCollapsed && isExpanded2) {
+      fade;
       window.scrollTo({
         top: 0,
         behavior: "smooth",
@@ -60,27 +61,21 @@ export default function MainContainer() {
 
   return (
     <div className="mainContainer">
-      <AnimationOnScroll
-        initiallyVisible="true"
-        animateIn="animate__rubberBand">
+      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
         <img
           className="bdImg"
           src={bd1}
           alt=""
           onClick={() => handleImageClick(0)}></img>
       </AnimationOnScroll>
-      <AnimationOnScroll
-        initiallyVisible="true"
-        animateIn="animate__rubberBand">
+      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
         <img
           className="bdImg"
           src={bd2}
           alt=""
           onClick={() => handleImageClick(1)}></img>
       </AnimationOnScroll>
-      <AnimationOnScroll
-        initiallyVisible="true"
-        animateIn="animate__rubberBand">
+      <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
         <img
           className="bdImg"
           src={bd3}
@@ -89,14 +84,14 @@ export default function MainContainer() {
       </AnimationOnScroll>
 
       <section className="collapseBox" {...getCollapseProps2()}>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd4}
             alt=""
             onClick={() => handleImageClick(3)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd5}
@@ -104,91 +99,91 @@ export default function MainContainer() {
             onClick={() => handleImageClick(4)}></img>
         </AnimationOnScroll>
 
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll initiallyVisible="true" animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd6}
             alt=""
             onClick={() => handleImageClick(5)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg "
             src={bd7}
             alt=""
             onClick={() => handleImageClick(6)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg "
             src={bd8}
             alt=""
             onClick={() => handleImageClick(7)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd9}
             alt=""
             onClick={() => handleImageClick(8)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd10}
             alt=""
             onClick={() => handleImageClick(9)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd11}
             alt=""
             onClick={() => handleImageClick(10)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd12}
             alt=""
             onClick={() => handleImageClick(11)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd13}
             alt=""
             onClick={() => handleImageClick(12)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd14}
             alt=""
             onClick={() => handleImageClick(13)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd15}
             alt=""
             onClick={() => handleImageClick(14)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd16}
             alt=""
             onClick={() => handleImageClick(15)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd17}
             alt=""
             onClick={() => handleImageClick(16)}></img>
         </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__rubberBand">
+        <AnimationOnScroll animateIn="animate__fadeIn">
           <img
             className="bdImg"
             src={bd18}
@@ -196,12 +191,11 @@ export default function MainContainer() {
             onClick={() => handleImageClick(17)}></img>
         </AnimationOnScroll>
       </section>
-
-      <button className="buttonCollapse" {...getToggleProps2()}>
-        <p className="textButtons">
-          {isExpanded2 ? <FaArrowUp /> : <FaArrowDown />}
-        </p>
-      </button>
+      {isExpanded2 ? null : (
+        <button className="buttonCollapse" {...getToggleProps2()}>
+          <p className="textButtons">{isExpanded2 ? null : <FaArrowDown />}</p>
+        </button>
+      )}
       <Lightbox
         open={open}
         close={() => setOpen(false)}

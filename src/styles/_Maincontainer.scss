@@ -7,11 +7,11 @@
   background-color: rgba(32, 32, 32, 0.792);
   max-width: 78rem;
   margin: 0rem auto;
-  padding: 0.8rem 0;
+
   border-radius: 10px;
-  -webkit-animation: slide-in-elliptic-bottom-fwd 0.7s
+  -webkit-animation: slide-in-elliptic-bottom-fwd 1.5s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-elliptic-bottom-fwd 0.7s
+  animation: slide-in-elliptic-bottom-fwd 1.5s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -28,6 +28,7 @@
   border: 0px;
   background-color: rgba(155, 79, 218, 0.572);
   transition: 400ms ease-out;
+  margin-bottom: 1rem;
 }
 
 .buttonCollapse:hover {
@@ -40,7 +41,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: none;
 }
 
 .collapseBox {
@@ -60,6 +60,13 @@
 @media screen and (max-device-width: 1262px) {
   .mainContainer {
     max-width: 52rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .collapseBox {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
 

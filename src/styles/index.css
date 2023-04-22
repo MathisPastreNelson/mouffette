@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background: radial-gradient(circle, rgba(179, 17, 165, 0.479) 0, rgba(39, 1, 48, 0.75) 50%, rgba(111, 6, 6, 0.494) 100%);
-  cursor: none;
   background-size: cover;
 }
 
@@ -44,8 +43,8 @@ header {
 }
 
 .cursor {
-  width: 70px;
-  height: 70px;
+  width: 52px;
+  height: 52px;
   border-radius: 5px;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -54,7 +53,7 @@ header {
   z-index: 9999;
   -webkit-backdrop-filter: invert(80%);
           backdrop-filter: invert(80%);
-  transition: 30ms ease-in;
+  transition: 60ms ease-in;
 }
 
 .active {
@@ -109,6 +108,40 @@ header {
     opacity: 1;
   }
 }
+.lds-hourglass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 71vh;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 72px solid rgba(155, 79, 218, 0.572);
+  border-color: rgba(241, 223, 255, 0.572) transparent rgba(241, 223, 255, 0.572) transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
 .presentContainer {
   margin: 0.5rem auto;
   padding: 0.5rem 0;
@@ -118,7 +151,7 @@ header {
   align-items: center;
   border-radius: 10px;
   max-width: 78rem;
-  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   overflow: hidden;
   z-index: -1;
 }
@@ -166,7 +199,7 @@ header {
 }
 
 .SoutineButton {
-  background-color: rgba(131, 255, 69, 0.712);
+  background: linear-gradient(90deg, rgba(2, 175, 25, 0.788) 0%, rgba(35, 254, 42, 0.622) 35%, rgba(103, 255, 136, 0.822) 100%);
   color: black;
   padding: 1rem 1rem;
   margin: 0.5rem 0;
@@ -177,11 +210,11 @@ header {
   font-size: 2rem;
   font-weight: bold;
   transition: 400ms ease-out;
-  cursor: none;
 }
 
 .SoutineButton:hover {
-  background-color: rgba(191, 255, 160, 0.881);
+  filter: brightness(1.5);
+  text-shadow: 0px -1px 13px rgb(0, 0, 0);
 }
 
 @media screen and (max-device-width: 1262px) {
@@ -228,9 +261,8 @@ header {
   background-color: rgba(32, 32, 32, 0.792);
   max-width: 78rem;
   margin: 0rem auto;
-  padding: 0.8rem 0;
   border-radius: 10px;
-  animation: slide-in-elliptic-bottom-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-bottom-fwd 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .mainContainerImgBox {
@@ -246,6 +278,7 @@ header {
   border: 0px;
   background-color: rgba(155, 79, 218, 0.572);
   transition: 400ms ease-out;
+  margin-bottom: 1rem;
 }
 
 .buttonCollapse:hover {
@@ -258,7 +291,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: none;
 }
 
 .collapseBox {
@@ -277,6 +309,12 @@ header {
 @media screen and (max-device-width: 1262px) {
   .mainContainer {
     max-width: 52rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .collapseBox {
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 }
 @media screen and (max-device-width: 838px) {
@@ -340,7 +378,6 @@ footer {
 .iconFooter {
   font-size: 6vh;
   transition: ease-out 200ms;
-  cursor: none;
 }
 
 .twitch {
